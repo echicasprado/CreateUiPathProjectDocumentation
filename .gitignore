@@ -161,4 +161,5 @@ cython_debug/
 
 /test
 *.xaml
-*.DS_Store
+.DS_Store
+source/.DS_Store
