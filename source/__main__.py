@@ -18,6 +18,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-
-# Run command to install dependecies    
-# pip install -r requirements.txt
