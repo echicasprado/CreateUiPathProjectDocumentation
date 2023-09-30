@@ -1,7 +1,7 @@
 
 import docx
 
-FOLDER_PATH = "/home/ever/GIT/ReadPath/test/result"
+FOLDER_PATH = "/Users/everchicas/GIT/ReadPath/test/result"
 NAME_FILE = "file"
 
 wordFile = docx.Document()

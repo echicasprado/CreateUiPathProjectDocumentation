@@ -23,9 +23,6 @@ def getDescription(XML_DATA):
 		if(currentFileType == None):
 			continue
 		else:
-			# print("###########################")
-			# print(f'Current file type: {currentType}\nContent: {currentFileType.get("sap2010:Annotation.AnnotationText")}')
-			# print("###########################")
 			return currentFileType.get("sap2010:Annotation.AnnotationText")
 
 def getArguments(XML_DATA):
@@ -36,16 +33,12 @@ def getArguments(XML_DATA):
 		arrayProperty.append(arg.get('Name'))
 	return arrayProperty
 	
-def main(filePath):
+def readXamlFile(filePath):
 	XML_DATA = openFile(filePath)
-	informationXaml = xamlFile("","",[])
-	informationXaml.description = getDescription(XML_DATA)
-	informationXaml.arguments = getArguments(XML_DATA)
-	informationXaml.path = filePath
-	print(str(informationXaml))
+	return xamlFile(filePath,getDescription(XML_DATA),getArguments(XML_DATA),"")
     
 if __name__ == "__main__":
 	for temp in TestFilePath:
 		print('-----------------------------------------')
-		main(temp)
+		readXamlFile(temp)
 		print('-----------------------------------------')
