@@ -1,14 +1,13 @@
 from bs4 import BeautifulSoup
 from fileInformation import xamlFile
 
-
-TestFilePath = [
-	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Flowchart.xaml',
-	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Sequence.xaml',
-	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/StateMachine.xaml',
-	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Workflow.xaml',
- 	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/WorkflowWithTemplate.xaml'
-]
+# TestFilePath = [
+# 	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Flowchart.xaml',
+# 	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Sequence.xaml',
+# 	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/StateMachine.xaml',
+# 	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/Workflow.xaml',
+#  	'/Users/everchicas/GIT/ReadPath/test/UseReThrow/Test/WorkflowWithTemplate.xaml'
+# ]
 
 def openFile(filePath):
 	with open(filePath, 'r') as f:
