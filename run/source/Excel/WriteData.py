@@ -22,8 +22,11 @@ class WriteData:
         self.workSheet.write('C1','Description',self.FORMATS.getHeaderFormat())
         self.workSheet.write('D1','Arguments',self.FORMATS.getHeaderFormat())
      
-    def __addArguments(arguments):
-        return ", ".join(arguments)
+    def __addArguments(self,arguments):
+        if arguments:
+            return ", ".join(arguments)
+        else:
+            return "N/A"
     
     def __writeCellData(self):
         counter = 2
@@ -41,4 +44,4 @@ class WriteData:
         self.__GetFormats()
         self.__addWorkSheet()
         self.__addHeaders()
-        self.__writeCellData
+        self.__writeCellData()
